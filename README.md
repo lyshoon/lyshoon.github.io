@@ -1,4 +1,4 @@
-Shoon planet
+All about shoon
 
 * Education
 
