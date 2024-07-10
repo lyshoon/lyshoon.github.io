@@ -1,97 +1,141 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta http-epuiv = "X-UA_Compatible" content = "IE = edge">
-        <meta name = "viewport" content = "width=device-width, initial-sclae=0">
-        <title> Shoon Planet </title>
-        <link rel = "stylesheet" href = "style.css"
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoon Planet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <div id="header">
-
         <div class="container">
             <nav>
                 <img src="shoon.png" class="logo">
                 <ul>
-                    <li><a herf = "#">Home</a></li>
-                    <li><a herf = "#">About</a></li>
-                    <li><a herf = "#">Childhood Life</a></li>
-                    <li><a herf = "#">Activities and achievements</a></li>
-                    <li><a herf = "#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Childhood Life</a></li>
+                    <li><a href="#">Activities and Achievements</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
                 <p> 𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞🫧𓇼𓏲*ੈ✩‧₊˚🎐˚˖𓍢ִ໋🦢˚༘˚⋆𐙚｡⋆𖦹.✧˚˖°𓇼🌊⋆🐚🫧୭🧷✧˚. ᵎᵎ⁺˚⋆｡°✩₊✩°｡⋆˚⁺*ੈ✩‧₊˚🎐𓆝 ⋆｡𖦹°‧🫧₊🫧𓇼𓏲*ੈ✩‧₊˚🎐⋆𐙚₊˚⊹♡☆⋆｡𖦹°‧★ 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 </p>
                 <h1>Undergraduate Student at Korea University</h1>
-                
             </div>
         </div>
     </div>
 
-<!------------about------------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/jj.jpg" class="profile-photo">
+    <!------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/jj.jpg" class="profile-photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game Development</span><br>Game designs/development</li>
+                            <li><span>Web/Mobile Development</span><br>Web/Mobile applications</li>
+                            <li><span>Personality</span><br>Cute, smart & bright</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Web development</li>
+                            <li><span>2024~</span><br>Game development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2014-2018</span><br>MEC Private High School</li>
+                            <li><span>2018-2020</span><br>Family Private High School</li>
+                            <li><span>2020-2022</span><br>Enjoyed the life :xD</li>
+                            <li><span>2022-2023 </span><br>Ajou University (Korean language program)</li>
+                            <li><span>2023~ </span><br>Korea University (CSE)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p class ="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans. </p>
+        </div>
+    </div>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id = "skills">
-                    <ul>
-                        <li><span>Game Development</span><br>Game designs/development</li>
-                        <li><span>Web/Mobile development</span><br>Web/Mobile applications</li>
-                        <li><span>Personality</span><br>Cute, smart & bright</li>
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id = "experience">
-                    <ul>
-                        <li><span>2023</span><br>Web development</li>
-                        <li><span>2024~</span><br>Game development</li>
-                    </ul>
+    <!------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Game Development</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
                 </div>
 
-                <div class="tab-contents" id = "education">
-                    <ul>
-                        <li><span>2014-2018</span><br>MEC Private High School</li>
-                        <li><span>2018-2020</span><br>Family Private High School</li>
-                        <li><span>2020-2022</span><br>Enjoyed the life :xD</li>
-                        <li><span>2022-2023 </span><br>Ajou University(Korean language program)</li>
-                        <li><span>2023~ </span><br>Korea University (CSE)</li>
-                    </ul>
+                <div>
+                    <h2>Web Development</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
                 </div>
-
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p></p>
+                    <a href="#">Learn more</a>
+                </div>
             </div>
+        </div>
+    </div>
+<!---------------portfolio------------>
+
+<div class="portfolio">
+    <div class =  "container">
+        <h1 class="sub-title">Daily Activities</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/ds.jpg" alt="">
+                <div class="layer">
+                    <h3>Enjoying this anime these days </h3>
+                  
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/lyf.jpg" alt="">
+                <h3>Drama of these days </h3>
+            </div>
+            <div class="work">
+                <img src="images/mlbb.jpg" alt="">
+                <h3>Game of these days</h3>
+            </div>
+
         </div>
     </div>
 </div>
-
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
+    </script>
 </body>
 </html>
