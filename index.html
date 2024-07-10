@@ -38,14 +38,37 @@
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p class ="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My target is to go the field of computer vision and make a cute and strong connection between robots and humans. </p>
+                <p class ="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans. </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Game Development</span><br>Game designs/development</li>
+                        <li><span>Web/Mobile development</span><br>Web/Mobile applications</li>
+                        <li><span>Personality</span><br>Cute, smart & bright</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id = "experience">
+                    <ul>
+                        <li><span>2023</span><br>Web development</li>
+                        <li><span>2024~</span><br>Game development</li>
+                    </ul>
                 </div>
 
+                <div class="tab-contents" id = "education">
+                    <ul>
+                        <li><span>2014-2018</span><br>MEC Private High School</li>
+                        <li><span>2018-2020</span><br>Family Private High School</li>
+                        <li><span>2020-2022</span><br>Enjoyed the life :xD</li>
+                        <li><span>2022-2023 </span><br>Ajou University(Korean language program)</li>
+                        <li><span>2023~ </span><br>Korea University (CSE)</li>
+                    </ul>
+                </div>
 
             </div>
         </div>
@@ -53,7 +76,22 @@
 </div>
 
 
+<script>
 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 
 </body>
 </html>
