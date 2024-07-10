@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: rgba(255, 196, 250, 0.984);
+    background: rgba(247, 220, 245, 0.984);
     color: #fff;
 }
 #header{
@@ -68,4 +68,68 @@ nav ul li a:hover::after{
 }
 .header-text p span{
     color: #eca3ec;
+}
+
+/*----------------about--------------*/
+
+/* style.css */
+.sub-title{
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.ss{
+    color:black;
+    margin-top: 30px;
+    font-weight: 350;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.about-col-1, .about-col-2 {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-col-1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.profile-photo {
+    width: 90%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex: 1;
+    padding-left: 20px;
+    text-align: left; 
+    margin-top: 60px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight:500;
+    cursor: pointer;
+    position: relative;
 }
