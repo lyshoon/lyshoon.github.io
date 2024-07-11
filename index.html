@@ -12,32 +12,35 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="shoon.png" class="logo">
-                <ul>
+                <img src="shoon.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Childhood Life</a></li>
                     <li><a href="#">Activities and Achievements</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-            </nav>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>            
+            
             <div class="header-text">
-                <p> 𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞🫧𓇼𓏲*ੈ✩‧₊˚🎐˚˖𓍢ִ໋🦢˚༘˚⋆𐙚｡⋆𖦹.✧˚˖°𓇼🌊⋆🐚🫧୭🧷✧˚. ᵎᵎ⁺˚⋆｡°✩₊✩°｡⋆˚⁺*ੈ✩‧₊˚🎐𓆝 ⋆｡𖦹°‧🫧₊🫧𓇼𓏲*ੈ✩‧₊˚🎐⋆𐙚₊˚⊹♡☆⋆｡𖦹°‧★ 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 </p>
+                <p>𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞🫧𓇼𓏲*ੈ✩‧₊˚🎐˚˖𓍢ִ໋🦢˚༘˚⋆𐙚｡⋆𖦹.✧˚˖°𓇼🌊⋆🐚🫧୭🧷✧˚. ᵎᵎ⁺˚⋆｡°✩₊✩°｡⋆˚⁺*ੈ✩‧₊˚🎐𓆝 ⋆｡𖦹°‧🫧₊🫧𓇼𓏲*ੈ✩‧₊˚🎐⋆𐙚₊˚⊹♡☆⋆｡𖦹°‧★ 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 </p>
                 <h1>Undergraduate Student at Korea University</h1>
             </div>
         </div>
     </div>
 
-    <!------------about------------->
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/jj.jpg" class="profile-photo">
+                    <img src="images/jj.jpg" class="profile-photo" alt="Profile Photo">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p class="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans. </p>
+                    <p class="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -73,86 +76,78 @@
         </div>
     </div>
 
-    <!------------services------------>
+    <!-- Services Section -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <h2>Game Development</h2>
-                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
-
                 <div>
                     <h2>Web Development</h2>
-                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <h2>UI/UX Design</h2>
-                    <p></p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
-<!---------------portfolio------------>
 
-<div class="portfolio">
-    <div class =  "container">
-        <h1 class="sub-title">Daily Activities</h1>
-        <div class="work-list">
-
-            <div class="work">
-                <img src="images/ds.jpg" alt="">
-                <div class="layer">
-                    <h3>Enjoying this anime these days </h3>
-                    <a href="#" class="btn">see more</a>
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Daily Activities</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ds.jpg" alt="Anime Image">
+                    <div class="layer">
+                        <h3>Enjoying this anime these days</h3>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/lyf.jpg" alt="Drama Image">
+                    <h3>Drama of these days</h3>
+                    <a href="#" class="ss">see more</a>
+                </div>
+                <div class="work">
+                    <img src="images/mlbb.jpg" alt="Game Image">
+                    <h3>Game of these days</h3>
+                    <a href="#" class="jj">see more</a>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/lyf.jpg" alt="">
-                <h3>Drama of these days </h3>
-                <a href="#" class="ss">see more</a>
-            </div>
-            <div class="work">
-                <img src="images/mlbb.jpg" alt="">
-                <h3>Game of these days</h3>
-                <a href="#" class="jj">see more</a>
-            </div>
-
         </div>
     </div>
-</div>
 
-
-<!----------------contact----------->
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p class="bb">www.shoonleimay@gmail.com</p>
-                <p class="hh">0102939834</p>
-                <div class="social-icons">
-                    <a href="http://www.facebook.com/shoon.may.1804"><i class ="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/ly.shoon?igsh=bWtiOWFobm8xNm1q&utm_source=qr"><i class ="fab fa-instagram"></i></a>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p class="bb">www.shoonleimay@gmail.com</p>
+                    <p class="hh">0102939834</p>
+                    <div class="social-icons">
+                        <a href="http://www.facebook.com/shoon.may.1804"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ly.shoon?igsh=bWtiOWFobm8xNm1q&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="images/slm.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <a href="images/slm.pdf" download class="btn btn2">Download CV</a>                
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
             </div>
-            <div class="contact-right"></div>
-               <form>
-                   <input type="text" name="Name" placeholder="Your Name" required>
-                   <input type="email" name="email" placeholder="Your Email" required>
-                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                   <button type="submit" class="btn btn2">Submit</button>
-               </form>
-            <div>
         </div>
     </div>
-</div>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -167,6 +162,16 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
     </script>
 </body>
