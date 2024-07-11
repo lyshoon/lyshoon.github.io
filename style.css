@@ -236,5 +236,109 @@ nav ul li a:hover::after{
     border-radius: 20px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
-
-
+.btn{
+    font-size: 1.3em;
+    display: block;
+    margin: 20px 20px;
+    width: fit-content;
+    border: 2px solid #550d36;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #070101;
+    transition: background 0.5s;
+}
+.ss{
+    font-size: 1.3em;
+    display: block;
+    margin: 20px 20px;
+    width: fit-content;
+    border: 2px solid #550d36;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #070101;
+    transition: background 0.5s;
+}
+.jj{
+    font-size: 1.3em;
+    display: block;
+    margin: 20px 20px;
+    width: fit-content;
+    border: 2px solid #550d36;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #070101;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background:hsl(250, 66%, 84%);
+}
+.ss:hover{
+    background:hsl(250, 66%, 84%);
+}
+.jj:hover{
+    background:hsl(250, 66%, 84%);
+}
+.bb{
+    color:#070101;
+}
+.hh{
+    color:#070101;
+}
+/*contact*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 2%;
+}
+.social-icons{
+    margin-top:15px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#85248a;
+    display: inline-block;
+    transform: 0.5;
+}
+.social-icons a:hover{
+    color:#f27ff8;
+    transform: translateY(-5px);
+}             
+.btn btn2{
+    display:inline-block;
+    background:#dc95ee;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:hsl(250, 66%, 84%);
+    padding: 15px;
+    margin: 15px 0;
+    color:aliceblue;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*-----------css for small screens---------*/
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone.jpeg);
+    }
+}
