@@ -36,3 +36,30 @@ nav{
 #header .header-text {
     padding: 20px; 
 }
+
+.profile-photo {
+    margin-top: -700px;
+    width: 27%; 
+    height: auto; 
+     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-col-1 {
+    flex:1;
+    padding: 10px;
+    text-align: left;
+}
