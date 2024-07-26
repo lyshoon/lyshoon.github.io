@@ -1,50 +1,77 @@
-*{
+body {
+    background: linear-gradient(to bottom, #FFF5DC, #FFF1D8); 
+    font-family: 'Poppins', sans-serif;
+    color: #5b2454; 
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+h1 {
+    margin: 1;
+    padding: 0;
 }
-body{
-    background: rgba(247, 220, 245, 0.984);
-    color: #532465;
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-.container{
-    padding: 10px 10px;
+h2 ,p{
+    margin:0;
+    padding: 0;
 }
 
-nav{
-    display: flex;
-    align-items:center;
-    justify-self: space-between;
-    flex-wrap: wrap;
+h1 {
+    font-size: 2.5em;
+    color: #541b52; 
+    margin-left: 60px;
 }
 
-#header .header-text h2,
-#header .header-text p {
-    margin: 20px 0; 
-}
-#header .header-text {
-    padding: 20px; 
+h2 {
+    font-size: 1.2em;
+    color: #532255; 
+    margin-left: 60px;
 }
 
-.profile-photo {
-    margin-top: -700px;
-    width: 27%; 
-    height: auto; 
-     
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+p {
+    font-size: 1.2em;
+    color: #541b52; 
+    margin-left: 60px;
+}
+
+.sub-title{
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    color: #541b52;
+    
+}
+
+.ss{
+    color:#541b52;
+    margin-top: 50px;
+    font-weight: 350;
+    margin-left:60px;
+    position: absolute;
+    bottom:95px;
+    left: 140px;
+    font-size: 18px;
+    background-color: rgba(251, 211, 211, 0.5);
+    padding: 10px 15px;
     border-radius: 15px;
+    max-width: 80%;
+    line-height: 1.6;
+    text-align: justify;
 }
+
+.container {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.container img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 5px solid rgba(251, 211, 211, 0.5);;
+    margin-top: 30px;
+    border-radius: 140px;
+}
+
 
 .row {
     display: flex;
@@ -52,14 +79,35 @@ nav{
     justify-content: space-between;
 }
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+.about-col-1 {
+    flex: 1;
+    padding: 10px;
+}
+.about-col-2 {
+    flex: 1;
+    padding: 10px;
 }
 
 .about-col-1 {
-    flex:1;
-    padding: 10px;
-    text-align: left;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
+
+.profile-photo {
+    width: 50%; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 30px;
+    margin-right: 210px;
+}
+
+.about-col-2 {
+    flex: 1;
+    padding-left: 50px;
+    text-align: left; 
+    margin-top: 60px;
+    margin-left: -60px;
+    
+}
+
