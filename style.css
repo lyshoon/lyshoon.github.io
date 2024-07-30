@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(image.jpeg);
+    background-image: url(images/7581656.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -67,12 +67,52 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text h1{
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 20px;
 }
 .header-text p span{
     color: #eca3ec;
 }
+.moving-image {
+    width: 100%;
+    max-width: 300px; 
+    margin-left: 650px;
+    margin-top: -4px;
+    animation: moveImage 5s infinite alternate;
+}
+
+.moving-purple {
+    width: 100%;
+    max-width: 350px; 
+    margin-left: -20px;
+    margin-top: -160px;
+    animation: 0;
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes movePurple {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px) rotate(10deg);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 /*----------------about--------------*/
 
