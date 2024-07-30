@@ -77,7 +77,7 @@ nav ul li a:hover::after{
     width: 100%;
     max-width: 300px; 
     margin-left: 650px;
-    margin-top: -4px;
+    margin-top: -20px;
     animation: moveImage 5s infinite alternate;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover::after{
     width: 100%;
     max-width: 350px; 
     margin-left: 20px;
-    margin-top: -160px;
+    margin-top: -200px;
     animation: movePurple 4s infinite ease-in-out, fadeIn 2s ease-in-out;
 }
 
