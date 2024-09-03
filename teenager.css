@@ -182,3 +182,77 @@ body{
         line-height: 1.6;
         text-align: justify;
     }
+
+    
+
+
+
+
+    .about-col-5 {
+        flex: 1;
+        padding: 10px;
+        margin-top: -380px;
+    }
+    .about-col-6 {
+        flex: 1;
+        padding: 10px;
+        
+    }
+    .highphoto{
+        width: 25%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 40px;
+        box-shadow: 0 4px 10px rgba(30, 0, 255, 0.339);
+        border: 1px solid rgba(255, 170, 245, 0.5);
+        margin-left: 45px;
+        max-width: 80%;
+        margin-top: 50px;
+    }
+    .ddd{
+        flex: 1;
+        padding: 20px;
+        position: relative;
+        right: -420px;
+        bottom: 380px;
+        background-color: rgba(211, 213, 251, 0.5);
+        padding: 40px 15px;
+        border-radius: 40px;
+        max-width: 60%;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+
+/* Media query for screens 600px or less */
+@media only screen and (max-width: 600px) {
+    
+    .col-1, .col-2, .about-col-1, .about-col-2, .about-col-3, .about-col-4, .about-col-5, .about-col-6 {
+        width: 100%;
+        padding: 10px;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    .kitty img, .photo, .midphoto, .highphoto {
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .bbb, .ccc, .ddd {
+        position: relative;
+        padding: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .midphoto, .highphoto {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
