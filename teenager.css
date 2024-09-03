@@ -63,12 +63,16 @@ body{
 }
 /* Media query for screens 600px or less */
     @media (max-width: 600px) {
+
+        #header{
+            background-image: url(images/green.jpeg);
+        }
         .header-text {
             font-size: 16px;
             padding: 20px;
             max-width: 90%;
             margin: 20px 30px;
-            margin-top: 20%;
+            margin-top: 0%;
             position: static;
             border-radius: 30px;
         }
