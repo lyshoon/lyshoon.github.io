@@ -1,229 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoon Planet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shoon Lei May is a Korea University computer science student building games, mobile apps, and interactive web experiences.">
+    <title>Shoon Lei May | Computer Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b6f7500b24.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="shoon.png" class="logo" alt="Logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Childhood Life</a></li>
-                    <li><a href="#portfolio">Activities and Achievements</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>            
-            
-            <div class="header-text">
-                <p>𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 𓆞🫧𓇼𓏲*ੈ✩‧₊˚🎐˚˖𓍢ִ໋🦢˚༘˚⋆𐙚｡⋆𖦹.✧˚˖°𓇼🌊⋆🐚🫧୭🧷✧˚. ᵎᵎ⁺˚⋆｡°✩₊✩°｡⋆˚⁺*ੈ✩‧₊˚🎐𓆝 ⋆｡𖦹°‧🫧₊🫧𓇼𓏲*ੈ✩‧₊˚🎐⋆𐙚₊˚⊹♡☆⋆｡𖦹°‧★ 𓆝 𓆟𓆝 𓆟 𓆞 𓆝 𓆟𓆝 𓆟 </p>
-                <h1>Undergraduate Student at Korea University</h1>
-                <img src="images/horse.png" class="moving-image" alt="Princess Cadence">
-                <img src="images/princess.png" class="moving-purple" alt="Princess Cadence">
-            </div>
-            
-        </div>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- About Section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/jj.jpg" class="profile-photo" alt="Profile Photo">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="ss">Hi Hi!! My name is Shoon Lei May and I'm now a student at Korea University studying Computer Science and Engineering. My goal is to specialize in computer vision, creating a cute yet strong connection between robots and humans. <span style="color:red; font-weight:bold;">And this is the place to save the memories of my life. (not portfolio :"))</span></p>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="brand" href="#top" aria-label="Shoon Lei May homepage">
+                <span>SLM</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle__line"></span>
+                <span class="nav-toggle__line"></span>
+                <span class="nav-toggle__line"></span>
+                <span class="sr-only">Open navigation</span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <p class="eyebrow">Computer Science Student | Interactive Systems</p>
+                    <h1>Shoon Lei May</h1>
+                    <p class="hero__lead">
+                        I build game systems, mobile apps, and polished web experiences that combine technical problem-solving with creative user experience design.
+                    </p>
+                    <div class="hero__actions" aria-label="Primary actions">
+                        <a class="button button--primary" href="#projects">View Projects</a>
+                        <a class="button button--secondary" href="mailto:shoonleimay48@gmail.com">Contact Me</a>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="hero__facts" aria-label="Portfolio highlights">
+                        <div class="hero__fact">
+                            <span>Focus</span>
+                            <strong>Game Development</strong>
+                        </div>
+                        <div class="hero__fact">
+                            <span>University</span>
+                            <strong>Korea University</strong>
+                        </div>
+                        <div class="hero__fact">
+                            <span>Portfolio</span>
+                            <strong>Game, Web, Mobile, AI</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__media" aria-label="Shoon Lei May portrait">
+                    <img src="images/jj.jpg" alt="Shoon Lei May in Seoul">
+                    <div class="hero__note">
+                        <span>Based in Seoul</span>
+                        <strong>Computer Science at Korea University</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="profile">
+            <div class="section__inner">
+                <div class="section__intro">
+                    <p class="eyebrow">Profile</p>
+                    <h2>Developer with a strong interest in games, AI-assisted productivity, and user-centered interfaces.</h2>
+                    <p>
+                        I am a computer science student at Korea University. My work focuses on interactive systems, from gameplay logic and character interaction to mobile app flows, reminders, AI assistant features, and frontend UI implementation.
+                    </p>
+                </div>
+
+                <div class="profile-grid">
+                    <article class="info-panel">
+                        <h3>Education</h3>
+                        <p class="info-panel__title">Bachelor of Computer Science</p>
+                        <p>College of Informatics, Korea University</p>
+                        <p class="meta">2023.09.02 - Present</p>
+                    </article>
+                    <article class="info-panel">
+                        <h3>Primary Interests</h3>
+                        <p>Game development, web and mobile applications, UI/UX design, interactive storytelling, and AI-assisted personal productivity.</p>
+                    </article>
+                    <article class="info-panel">
+                        <h3>Languages</h3>
+                        <p>English and Korean fluency, with basic Chinese communication.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section__inner">
+                <div class="section__intro section__intro--split">
+                    <div>
+                        <p class="eyebrow">Selected Work</p>
+                        <h2>Projects that connect gameplay, product thinking, and interface engineering.</h2>
+                    </div>
+                    <p>
+                        These projects span React, React Native, Firebase, web deployment, educational mini-games, and strategy game systems.
+                    </p>
+                </div>
+
+                <article class="featured-project">
+                    <div class="featured-project__content">
+                        <p class="project-kicker">Featured Project</p>
+                        <h3>FMO - Focus Mood On</h3>
+                        <p>
+                            React Native and Firebase based AI schedule and style recommendation app. Built around assistant support, schedule management, notifications, and personalized user interface flows.
+                        </p>
+                        <div class="project-meta">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>AI Assistant</span>
+                            <span>2026.04 - 2026.05</span>
+                        </div>
+                    </div>
+                    <a class="button button--primary" href="https://drive.google.com/file/d/1jBxC7FBa69rf3OOw0VAvL9tIAx8zFiIo/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Open Project File</a>
+                </article>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div>
+                            <p class="project-kicker">Educational Game</p>
+                            <h3>CAT&amp;DOG x HelloMaple Mini Games</h3>
+                            <p>
+                                Developed web-based educational mini-game content, UI implementation, and user participation gameplay logic for the HelloMaple platform.
+                            </p>
+                        </div>
+                        <div class="project-card__footer">
+                            <span>Web Game | UI | Gameplay Logic</span>
+                            <a href="https://www.hellomaple.org/ko/web-play?play=c26961513e6d471dbb8ed12b353f2264" target="_blank" rel="noopener noreferrer">Play Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div>
+                            <p class="project-kicker">Strategy Game</p>
+                            <h3>Soul Chess</h3>
+                            <p>
+                                Strategy-based chess style game project with cat and dog characters. Contributed to gameplay systems, character interactions, and UI development.
+                            </p>
+                        </div>
+                        <div class="project-card__footer">
+                            <span>Game Systems | Character Interaction</span>
+                            <a href="https://store.onstove.com/en/games/5142" target="_blank" rel="noopener noreferrer">View Store Page</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div>
+                            <p class="project-kicker">Web Platform</p>
+                            <h3>Mini Game Website</h3>
+                            <p>
+                                Web-based mini-game platform with React frontend work, UI/UX implementation, game content integration, and deployment.
+                            </p>
+                        </div>
+                        <div class="project-card__footer">
+                            <span>React | Frontend | Deployment</span>
+                            <a href="https://play-with-shoon.vercel.app/" target="_blank" rel="noopener noreferrer">Open Demo</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div>
+                            <p class="project-kicker">Course Project</p>
+                            <h3>Play on Melody</h3>
+                            <p>
+                                Game project for 3D design and game programming, focused on interactive gameplay design and a music-driven experience.
+                            </p>
+                        </div>
+                        <div class="project-card__footer">
+                            <span>3D Design | Game Programming</span>
+                            <span>COSE157</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light" id="experience">
+            <div class="section__inner">
+                <div class="section__intro">
+                    <p class="eyebrow">Experience</p>
+                    <h2>Academic, internship, and club work with practical development responsibility.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-item__date">2024.12.31 - 2025.02.28</div>
+                        <div>
+                            <h3>Korea University Security Lab Intern</h3>
+                            <p>Vacation intern in the computer security research lab, gaining exposure to security research practices and academic engineering workflows.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-item__date">2023 - 2026</div>
+                        <div>
+                            <h3>CAT&amp;DOG Game Developing Club</h3>
+                            <p>Participated in game development activities, including strategy game production and educational mini-game projects with HelloMaple.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-item__date">2023.09 - Present</div>
+                        <div>
+                            <h3>Korea University, College of Informatics</h3>
+                            <p>Bachelor of Computer Science student building a foundation in software engineering, systems, game programming, and interactive application development.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section__inner">
+                <div class="section__intro section__intro--split">
+                    <div>
+                        <p class="eyebrow">Technical Skills</p>
+                        <h2>Practical tools for building interactive products from idea to deployed experience.</h2>
+                    </div>
+                    <p>
+                        I combine programming fundamentals with product-facing implementation, especially where interface clarity and gameplay logic matter.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <section class="skill-group" aria-labelledby="languages-heading">
+                        <h3 id="languages-heading">Languages</h3>
                         <ul>
-                            <li><span>Game Development</span><br>Game designs/development</li>
-                            <li><span>Web/Mobile Development</span><br>Web/Mobile applications</li>
-                            <li><span>Personality</span><br>Cute, smart & bright</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C / C++</li>
                         </ul>
-                    </div>
-                    
-                    <div class="tab-contents" id="experience">
+                    </section>
+                    <section class="skill-group" aria-labelledby="frontend-heading">
+                        <h3 id="frontend-heading">Web &amp; Mobile</h3>
                         <ul>
-                            <li><span>2023</span><br>Web development</li>
-                            <li><span>2024~</span><br>Game development</li>
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Firebase</li>
+                            <li>Responsive UI</li>
                         </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
+                    </section>
+                    <section class="skill-group" aria-labelledby="game-heading">
+                        <h3 id="game-heading">Game Development</h3>
                         <ul>
-                            <li><span>2014-2018</span><br>MEC Private High School</li>
-                            <li><span>2018-2020</span><br>Family Private High School</li>
-                            <li><span>2020-2022</span><br>Enjoyed the life :xD</li>
-                            <li><span>2022-2023 </span><br>Ajou University (Korean language program)</li>
-                            <li><span>2023~ </span><br>Korea University (CSE)</li>
+                            <li>Gameplay logic</li>
+                            <li>Character interaction</li>
+                            <li>Mini-game systems</li>
+                            <li>3D game programming</li>
                         </ul>
-                    </div>
+                    </section>
+                    <section class="skill-group" aria-labelledby="strengths-heading">
+                        <h3 id="strengths-heading">Strengths</h3>
+                        <ul>
+                            <li>Teamwork</li>
+                            <li>Leadership</li>
+                            <li>Critical thinking</li>
+                            <li>Clear communication</li>
+                        </ul>
+                    </section>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Services Section -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Childhood Life</h1>
-            <div class="services-list">
+        <section class="contact-section" id="contact">
+            <div class="contact-section__inner">
                 <div>
-                    <h2>Baby-days</h2>
-                    <a href="baby.html">Learn more</a>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let us build polished, useful interactive software.</h2>
+                    <p>
+                        I am open to project collaboration, game development roles, and software engineering opportunities connected to web, mobile, AI, or interactive systems.
+                    </p>
                 </div>
-                <div>
-                    <h2>Teenager life</h2>
-                    <a href="teenager.html">Learn more</a>
-                </div>
-                <div>
-                    <h2>Adult</h2>
-                    <a href="Adult/adult.html">Learn more</a>
+                <div class="contact-links" aria-label="Contact links">
+                    <a href="mailto:shoonleimay48@gmail.com">shoonleimay48@gmail.com</a>
+                    <a href="tel:+821057085061">010-5708-5061</a>
+                    <a href="https://github.com/lyshoon" target="_blank" rel="noopener noreferrer">github.com/lyshoon</a>
+                    <a href="https://lyshoon.github.io" target="_blank" rel="noopener noreferrer">lyshoon.github.io</a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <!-- Portfolio Section -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Activities and Achievements</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/aaa.jpeg" alt="Anime Image">
-                    <div class="layer">
-                        <h3>Achievements</h3>
-                        <a href="#" class="btn">see more</a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/f.png" alt="Drama Image">
-                    <h3>Family Time</h3>
-                    <a href="#" class="ss">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/dream.png" alt="Game Image">
-                    <h3>Dream</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/singer.png" alt="Game Image">
-                    <h3>Hobby</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/go.png" alt="Game Image">
-                    <h3>Animes</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/chess.png" alt="Game Image">
-                    <h3>Games</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/m.png" alt="Game Image">
-                    <h3>Dramas and movies</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                <div class="work">
-                    <img src="images/h.png" alt="Game Image">
-                    <h3>extracurricular activities</h3>
-                    <a href="#" class="jj">see more</a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p class="bb">www.shoonleimay@gmail.com</p>
-                    <p class="hh">0102939834</p>
-                    <div class="social-icons">
-                        <a href="http://www.facebook.com/shoon.may.1804"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/ly.shoon?igsh=bWtiOWFobm8xNm1q&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <a href="images/gg" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Shoon Lei May. Built with care for a professional portfolio.</p>
+    </footer>
 
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname) {
-            for (var tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (var tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+        const navToggle = document.querySelector(".nav-toggle");
+        const navMenu = document.querySelector("#nav-menu");
+        const year = document.querySelector("#year");
+
+        if (year) {
+            year.textContent = new Date().getFullYear();
         }
 
-        var sidemenu = document.getElementById("sidemenu");
-    
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-    
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
+        if (navToggle && navMenu) {
+            navToggle.addEventListener("click", () => {
+                const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+                navToggle.setAttribute("aria-expanded", String(!isOpen));
+                navMenu.classList.toggle("is-open");
+                document.body.classList.toggle("menu-open", !isOpen);
+            });
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbww-soJvk5kL1EqWVHQ3OTugW49le_w23KZ0KxBAdHyPmabf9mVn5Sz4lUsylz0VdEuvA/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const msg = document.getElementById("msg");
-    
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully";
-                    setTimeout(function(){
-                        msg.innerHTML = "";
-                    }, 5000);
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message));
-        });
+            navMenu.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    navToggle.setAttribute("aria-expanded", "false");
+                    navMenu.classList.remove("is-open");
+                    document.body.classList.remove("menu-open");
+                });
+            });
+        }
     </script>
-    
-    
 </body>
 </html>
